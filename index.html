@@ -536,6 +536,58 @@
         font-size: 0.9rem;
     }
 }
+        /* --- NÚT GỌI ĐIỆN THOẠI GÓC PHẢI DƯỚI (NẰM TRÊN ZALO) --- */
+.floating-phone {
+    position: fixed;
+    bottom: 100px; /* Đặt cao hơn nút Zalo (Zalo đang là 30px) */
+    right: 30px;
+    background-color: #ef4444; /* Màu đỏ nổi bật */
+    color: white;
+    padding: 12px 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(239, 68, 68, 0.4);
+    z-index: 999;
+    transition: all 0.3s ease;
+}
+
+.floating-phone:hover {
+    background-color: #dc2626;
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(239, 68, 68, 0.6);
+    color: white;
+}
+
+.floating-phone i {
+    font-size: 1.2rem;
+    animation: ring 1.5s infinite ease-in-out; /* Hiệu ứng rung chuông */
+}
+
+/* Hiệu ứng rung cho icon điện thoại */
+@keyframes ring {
+    0% { transform: rotate(0); }
+    10% { transform: rotate(15deg); }
+    20% { transform: rotate(-15deg); }
+    30% { transform: rotate(15deg); }
+    40% { transform: rotate(-15deg); }
+    50% { transform: rotate(0); }
+    100% { transform: rotate(0); }
+}
+
+/* Điều chỉnh lại vị trí trên điện thoại */
+@media (max-width: 768px) {
+    .floating-phone {
+        bottom: 80px; /* Đặt cao hơn nút Zalo trên mobile */
+        right: 20px;
+        padding: 10px 16px;
+        font-size: 0.9rem;
+    }
+}
     </style>
 </head>
 <body>
@@ -1470,6 +1522,11 @@
 <a href="https://zalo.me/0843589647" target="_blank" class="floating-contact">
     <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo">
     <span>Liên hệ mua ngay</span>
+</a>
+    <!-- NÚT GỌI ĐIỆN THOẠI -->
+<a href="tel:0843589647" class="floating-phone">
+    <i class="fa-solid fa-phone-volume"></i>
+    <span>0843 589 647</span>
 </a>
 </body>
 </html>
