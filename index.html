@@ -697,6 +697,19 @@
             <button class="tab-btn" onclick="switchCategory('khoi-12', this)">
                 <i class="fa-solid fa-graduation-cap"></i> Khối 12
             </button>
+            <button class="tab-btn" onclick="switchCategory('khoi-12', this)">
+                <i class="fa-solid fa-graduation-cap"></i> Khối 12
+            </button>
+            
+            <!-- CHÈN NÚT COMBO VÀO ĐÂY (NGAY SAU KHỐI 12) -->
+            <button class="tab-btn" onclick="switchCategory('combo-tiet-kiem', this)">
+                <i class="fa-solid fa-tags"></i> Combo Tiết Kiệm
+            </button>
+            <!-- ======================================= -->
+
+            <button class="tab-btn" onclick="switchCategory('ly-thuyet', this)">
+                <i class="fa-solid fa-book-open"></i> Lý Thuyết
+            </button>
             <button class="tab-btn" onclick="switchCategory('ly-thuyet', this)">
                 <i class="fa-solid fa-book-open"></i> Lý Thuyết
             </button>
@@ -1099,6 +1112,137 @@
 
             </div>
         </div>
+        <!-- ... (Code các tài liệu khối 12 ở trên) ... -->
+            </div>
+        </div>
+        <!-- KẾT THÚC KHỐI 12 -->
+
+        <!-- CHÈN NỘI DUNG COMBO TIẾT KIỆM VÀO ĐÂY (NGAY SAU KHỐI 12) -->
+        <div class="category-content" data-cat="combo-tiet-kiem">
+            <div class="section-header">
+                <h2>COMBO TIẾT KIỆM</h2>
+                <p>Danh sách các gói tài liệu combo siêu ưu đãi</p>
+            </div>
+            <div class="grid-container">
+
+                <div class="card" data-title="dạy thêm 3 khối - thầy trần thi nhân" data-code="cb01">
+                    <div class="card-top">
+                        <span class="badge-code">CB01</span>
+                        <span class="badge-price">400.000đ</span>
+                    </div>
+                    <div class="card-title">DẠY THÊM 3 KHỐI - THẦY TRẦN THI NHÂN</div>
+                    <div class="card-actions">
+                        <a href="https://drive.google.com/drive/folders/15Mi3GMPzKmalULXaSk6ZVbBtPQrEkdJf?usp=drive_link" target="_blank" class="btn-preview">
+                            <i class="fa-solid fa-eye"></i> Xem Thử
+                        </a>
+                        <button class="btn-buy" onclick="openOrderModal('CB01', 'DẠY THÊM 3 KHỐI - THẦY TRẦN THI NHÂN', '400.000đ')">
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card" data-title="dạy thêm 3 khối - cô nhung cute" data-code="cb02">
+                    <div class="card-top">
+                        <span class="badge-code">CB02</span>
+                        <span class="badge-price">400.000đ</span>
+                    </div>
+                    <div class="card-title">DẠY THÊM 3 KHỐI - CÔ NHUNG CUTE</div>
+                    <div class="card-actions">
+                        <a href="https://drive.google.com/drive/folders/1W1CJfWQW9fDRYJ3rtPFBNEzGnsp8za2D?usp=drive_link" target="_blank" class="btn-preview">
+                            <i class="fa-solid fa-eye"></i> Xem Thử
+                        </a>
+                        <button class="btn-buy" onclick="openOrderModal('CB02', 'DẠY THÊM 3 KHỐI - CÔ NHUNG CUTE', '400.000đ')">
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card" data-title="dạy thêm 3 khối - thầy hoàng sư điểu" data-code="cb03">
+                    <div class="card-top">
+                        <span class="badge-code">CB03</span>
+                        <span class="badge-price">400.000đ</span>
+                    </div>
+                    <div class="card-title">DẠY THÊM 3 KHỐI - THẦY HOÀNG SƯ ĐIỂU</div>
+                    <div class="card-actions">
+                        <a href="https://drive.google.com/drive/folders/190yXQPNwaetN0G4iJ5BlfIpYU_sJzdtN?usp=drive_link" target="_blank" class="btn-preview">
+                            <i class="fa-solid fa-eye"></i> Xem Thử
+                        </a>
+                        <button class="btn-buy" onclick="openOrderModal('CB03', 'DẠY THÊM 3 KHỐI - THẦY HOÀNG SƯ ĐIỂU', '400.000đ')">
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card" data-title="dạy thêm 3 khối - website tài liệu chuẩn" data-code="cb04">
+                    <div class="card-top">
+                        <span class="badge-code">CB04</span>
+                        <span class="badge-price">400.000đ</span>
+                    </div>
+                    <div class="card-title">DẠY THÊM 3 KHỐI - WEBSITE TÀI LIỆU CHUẨN</div>
+                    <div class="card-actions">
+                        <a href="https://drive.google.com/drive/folders/1USARc8Rq4FsWJvpo6-ikHVi1NTNdtpsj?usp=drive_link" target="_blank" class="btn-preview">
+                            <i class="fa-solid fa-eye"></i> Xem Thử
+                        </a>
+                        <button class="btn-buy" onclick="openOrderModal('CB04', 'DẠY THÊM 3 KHỐI - WEBSITE TÀI LIỆU CHUẨN', '400.000đ')">
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card" data-title="dạy thêm khối 10 , 11 - website thủ khoa đại học" data-code="cb05">
+                    <div class="card-top">
+                        <span class="badge-code">CB05</span>
+                        <span class="badge-price">300.000đ</span>
+                    </div>
+                    <div class="card-title">DẠY THÊM KHỐI 10 , 11 - WEBSITE THỦ KHOA ĐẠI HỌC</div>
+                    <div class="card-actions">
+                        <a href="https://drive.google.com/drive/folders/1Ad2O6jMppe9LsKRBrgHhPIf4vTN2YtPR?usp=drive_link" target="_blank" class="btn-preview">
+                            <i class="fa-solid fa-eye"></i> Xem Thử
+                        </a>
+                        <button class="btn-buy" onclick="openOrderModal('CB05', 'DẠY THÊM KHỐI 10 , 11 - WEBSITE THỦ KHOA ĐẠI HỌC', '300.000đ')">
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card" data-title="chuyên luyện lý thuyết & thực tế - thầy vũ ngọc anh" data-code="cb07">
+                    <div class="card-top">
+                        <span class="badge-code">CB07</span>
+                        <span class="badge-price">330.000đ</span>
+                    </div>
+                    <div class="card-title">CHUYÊN LUYỆN LÝ THUYẾT & THỰC TẾ - THẦY VŨ NGỌC ANH</div>
+                    <div class="card-actions">
+                        <a href="https://drive.google.com/drive/folders/1AzmuRxgnzVcPbX7oLmBq3VpSww_72nqg?usp=drive_link" target="_blank" class="btn-preview">
+                            <i class="fa-solid fa-eye"></i> Xem Thử
+                        </a>
+                        <button class="btn-buy" onclick="openOrderModal('CB07', 'CHUYÊN LUYỆN LÝ THUYẾT & THỰC TẾ - THẦY VŨ NGỌC ANH', '330.000đ')">
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card" data-title="dạy thêm 3 khối - website tài liệu chuẩn 2027" data-code="cb2706">
+                    <div class="card-top">
+                        <span class="badge-code">CB2706</span>
+                        <span class="badge-price">600.000đ</span>
+                    </div>
+                    <div class="card-title">DẠY THÊM 3 KHỐI - WEBSITE TÀI LIỆU CHUẨN 2027</div>
+                    <div class="card-actions">
+                        <a href="https://drive.google.com/drive/folders/1PsWaWomfD9aV_gDk7JFlYL2r7vttJ6qs?usp=drive_link" target="_blank" class="btn-preview">
+                            <i class="fa-solid fa-eye"></i> Xem Thử
+                        </a>
+                        <button class="btn-buy" onclick="openOrderModal('CB2706', 'DẠY THÊM 3 KHỐI - WEBSITE TÀI LIỆU CHUẨN 2027', '600.000đ')">
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- ============================================================= -->
+
+        <!-- CATEGORY: CHUYÊN LUYỆN LÝ THUYẾT KHỐI 12 -->
+        <div class="category-content" data-cat="ly-thuyet">
 
         <!-- CATEGORY: CHUYÊN LUYỆN LÝ THUYẾT KHỐI 12 -->
         <div class="category-content" data-cat="ly-thuyet">
