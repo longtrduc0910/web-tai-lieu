@@ -391,6 +391,7 @@
         }
 
         /* --- MODAL ĐẶT MUA --- */
+        /* --- MODAL ĐẶT MUA --- */
         .modal {
             display: none;
             position: fixed;
@@ -401,15 +402,18 @@
             height: 100%;
             background-color: rgba(15, 23, 42, 0.7);
             backdrop-filter: blur(5px);
+            overflow-y: auto; /* Thêm dòng này để cho phép cuộn toàn màn hình nếu cần */
         }
 
         .modal-content {
             background-color: white;
-            margin: 5% auto;
+            margin: 40px auto; /* Sửa lại margin để cách mí trên/dưới cố định */
             padding: 2rem;
             border-radius: var(--radius-card);
             width: 90%;
             max-width: 450px;
+            max-height: 85vh; /* Giới hạn chiều cao tối đa bằng 85% màn hình */
+            overflow-y: auto; /* Tự động xuất hiện thanh cuộn dọc khi nội dung bị dài */
             text-align: center;
             position: relative;
             animation: slideDown 0.3s cubic-bezier(0.16, 1, 0.3, 1);
@@ -431,9 +435,9 @@
         }
 
         .qr-box img {
-            max-width: 200px;
+            max-width: 160px; /* Thu nhỏ từ 200px xuống 160px để tiết kiệm chiều cao */
             border-radius: 12px;
-            margin: 1rem 0;
+            margin: 0.8rem 0;
             border: 2px solid #e2e8f0;
             box-shadow: 0 4px 10px rgba(0,0,0,0.05);
         }
