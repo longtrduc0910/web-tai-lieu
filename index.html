@@ -317,33 +317,32 @@
 
         .card-actions {
             display: flex;
-            gap: 8px;
+            flex-direction: column;
+            gap: 10px;
         }
 
-        /* Nút Xem thử */
+        /* Nút Xem Thử */
         .btn-preview {
             flex: 1;
-            background: #f1f5f9;
-            color: var(--primary-accent);
+            background: #e2e8f0;
+            color: #334155;
             text-decoration: none;
-            padding: 0.8rem 0.5rem;
-            border: 1px solid #cbd5e1;
+            padding: 0.8rem 1rem;
+            border: none;
             border-radius: 12px;
             font-weight: 600;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 6px;
+            gap: 8px;
             transition: all 0.25s ease;
             cursor: pointer;
         }
 
         .btn-preview:hover {
-            background: #e2e8f0;
-            color: var(--primary-blue);
+            background: #cbd5e1;
             transform: translateY(-2px);
-            border-color: #94a3b8;
         }
 
         /* Nút Đặt Mua */
@@ -352,15 +351,15 @@
             background: linear-gradient(135deg, #10b981, #059669);
             color: white;
             text-decoration: none;
-            padding: 0.8rem 0.5rem;
+            padding: 0.8rem 1rem;
             border: none;
             border-radius: 12px;
             font-weight: 600;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 6px;
+            gap: 8px;
             transition: all 0.25s ease;
             box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
             cursor: pointer;
@@ -499,7 +498,7 @@
             
             <div class="search-box">
                 <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" id="searchInput" placeholder="Tìm kiếm tài liệu, giáo viên trên toàn hệ thống..." onkeyup="filterMaterials()">
+                <input type="text" id="searchInput" placeholder="Tìm kiếm tài liệu, giáo viên (Thầy Nhân, Cô Nhung...)" onkeyup="filterMaterials()">
             </div>
         </div>
     </header>
@@ -549,11 +548,11 @@
                     </div>
                     <div class="card-title">DẠY THÊM VẬT LÝ KHỐI 10 – THẦY TRẦN THI NHÂN</div>
                     <div class="card-actions">
-                        <button class="btn-preview" onclick="alert('Tính năng xem thử đang được cập nhật cho tài liệu này!')">
+                        <a href="https://drive.google.com/drive/folders/1xuzn_AFYMBVcKpU2OoEIv0H30U7UNPQt?usp=drive_link" target="_blank" class="btn-preview">
                             <i class="fa-solid fa-eye"></i> Xem Thử
-                        </button>
+                        </a>
                         <button class="btn-buy" onclick="openOrderModal('VL01', 'DẠY THÊM VẬT LÝ KHỐI 10 – THẦY TRẦN THI NHÂN', '180.000đ')">
-                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
                         </button>
                     </div>
                 </div>
@@ -565,11 +564,11 @@
                     </div>
                     <div class="card-title">DẠY THÊM VẬT LÝ KHỐI 10 – CÔ NHUNG CUTE</div>
                     <div class="card-actions">
-                        <button class="btn-preview" onclick="alert('Tính năng xem thử đang được cập nhật cho tài liệu này!')">
+                        <a href="https://drive.google.com/drive/folders/1Zh1XsJDPFyqc288gKuA367KY6d4ulJP2?usp=drive_link" target="_blank" class="btn-preview">
                             <i class="fa-solid fa-eye"></i> Xem Thử
-                        </button>
+                        </a>
                         <button class="btn-buy" onclick="openOrderModal('VL02', 'DẠY THÊM VẬT LÝ KHỐI 10 – CÔ NHUNG CUTE', '180.000đ')">
-                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
                         </button>
                     </div>
                 </div>
@@ -581,11 +580,11 @@
                     </div>
                     <div class="card-title">DẠY THÊM VẬT LÝ KHỐI 10 – THẦY HOÀNG SƯ ĐIỂU</div>
                     <div class="card-actions">
-                        <button class="btn-preview" onclick="alert('Tính năng xem thử đang được cập nhật cho tài liệu này!')">
+                        <a href="https://drive.google.com/drive/folders/1sg6YbPmPS6aZ6We0oeuuGEdWTB2Icn4g?usp=drive_link" target="_blank" class="btn-preview">
                             <i class="fa-solid fa-eye"></i> Xem Thử
-                        </button>
+                        </a>
                         <button class="btn-buy" onclick="openOrderModal('VL03', 'DẠY THÊM VẬT LÝ KHỐI 10 – THẦY HOÀNG SƯ ĐIỂU', '180.000đ')">
-                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
                         </button>
                     </div>
                 </div>
@@ -597,11 +596,11 @@
                     </div>
                     <div class="card-title">DẠY THÊM VẬT LÝ KHỐI 10 – WEBSITE TÀI LIỆU CHUẨN</div>
                     <div class="card-actions">
-                        <button class="btn-preview" onclick="alert('Tính năng xem thử đang được cập nhật cho tài liệu này!')">
+                        <a href="https://drive.google.com/drive/folders/1EpnROhGtyYnrYEYKSmBisLpaJBNCf8r1?usp=drive_link" target="_blank" class="btn-preview">
                             <i class="fa-solid fa-eye"></i> Xem Thử
-                        </button>
+                        </a>
                         <button class="btn-buy" onclick="openOrderModal('VL04', 'DẠY THÊM VẬT LÝ KHỐI 10 – WEBSITE TÀI LIỆU CHUẨN', '180.000đ')">
-                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
                         </button>
                     </div>
                 </div>
@@ -613,11 +612,11 @@
                     </div>
                     <div class="card-title">DẠY THÊM VẬT LÝ KHỐI 10 – WEBSITE THỦ KHOA ĐẠI HỌC</div>
                     <div class="card-actions">
-                        <button class="btn-preview" onclick="alert('Tính năng xem thử đang được cập nhật cho tài liệu này!')">
+                        <a href="https://drive.google.com/drive/folders/1k7OxLyYwrMeYttpqj6Go85D8JYQwgL8a?usp=drive_link" target="_blank" class="btn-preview">
                             <i class="fa-solid fa-eye"></i> Xem Thử
-                        </button>
+                        </a>
                         <button class="btn-buy" onclick="openOrderModal('VL05', 'DẠY THÊM VẬT LÝ KHỐI 10 – WEBSITE THỦ KHOA ĐẠI HỌC', '180.000đ')">
-                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
                         </button>
                     </div>
                 </div>
@@ -629,11 +628,11 @@
                     </div>
                     <div class="card-title">DẠY THÊM VẬT LÝ KHỐI 10 – WEBSITE TÀI LIỆU CHUẨN 2027</div>
                     <div class="card-actions">
-                        <button class="btn-preview" onclick="alert('Tính năng xem thử đang được cập nhật cho tài liệu này!')">
+                        <a href="https://drive.google.com/drive/folders/1gL2fFCb1j1_N8XjpXo6VKqDCfYkSpM20?usp=drive_link" target="_blank" class="btn-preview">
                             <i class="fa-solid fa-eye"></i> Xem Thử
-                        </button>
+                        </a>
                         <button class="btn-buy" onclick="openOrderModal('VL2706', 'DẠY THÊM VẬT LÝ KHỐI 10 – WEBSITE TÀI LIỆU CHUẨN 2027', '220.000đ')">
-                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
                         </button>
                     </div>
                 </div>
@@ -656,11 +655,11 @@
                     </div>
                     <div class="card-title">DẠY THÊM VẬT LÝ KHỐI 11 – THẦY TRẦN THI NHÂN</div>
                     <div class="card-actions">
-                        <button class="btn-preview" onclick="alert('Tính năng xem thử đang được cập nhật cho tài liệu này!')">
+                        <a href="https://drive.google.com/drive/folders/16BIK5_ePoiP9wM3jQDMP-sDTtG0B-15Z?usp=drive_link" target="_blank" class="btn-preview">
                             <i class="fa-solid fa-eye"></i> Xem Thử
-                        </button>
+                        </a>
                         <button class="btn-buy" onclick="openOrderModal('VL01', 'DẠY THÊM VẬT LÝ KHỐI 11 – THẦY TRẦN THI NHÂN', '180.000đ')">
-                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
                         </button>
                     </div>
                 </div>
@@ -672,11 +671,11 @@
                     </div>
                     <div class="card-title">DẠY THÊM VẬT LÝ KHỐI 11 – CÔ NHUNG CUTE</div>
                     <div class="card-actions">
-                        <button class="btn-preview" onclick="alert('Tính năng xem thử đang được cập nhật cho tài liệu này!')">
+                        <a href="https://drive.google.com/drive/folders/1ucb9cuIrO9Wzy5uCJw8yd_cyVWjEZgmO?usp=drive_link" target="_blank" class="btn-preview">
                             <i class="fa-solid fa-eye"></i> Xem Thử
-                        </button>
+                        </a>
                         <button class="btn-buy" onclick="openOrderModal('VL02', 'DẠY THÊM VẬT LÝ KHỐI 11 – CÔ NHUNG CUTE', '180.000đ')">
-                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
                         </button>
                     </div>
                 </div>
@@ -688,11 +687,11 @@
                     </div>
                     <div class="card-title">DẠY THÊM VẬT LÝ KHỐI 11 – THẦY HOÀNG SƯ ĐIỂU</div>
                     <div class="card-actions">
-                        <button class="btn-preview" onclick="alert('Tính năng xem thử đang được cập nhật cho tài liệu này!')">
+                        <a href="https://drive.google.com/drive/folders/1BnwVGHUJt1g0h4_dCrWv1chETDV_lqWj?usp=drive_link" target="_blank" class="btn-preview">
                             <i class="fa-solid fa-eye"></i> Xem Thử
-                        </button>
+                        </a>
                         <button class="btn-buy" onclick="openOrderModal('VL03', 'DẠY THÊM VẬT LÝ KHỐI 11 – THẦY HOÀNG SƯ ĐIỂU', '180.000đ')">
-                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
                         </button>
                     </div>
                 </div>
@@ -704,11 +703,11 @@
                     </div>
                     <div class="card-title">DẠY THÊM VẬT LÝ KHỐI 11 – WEBSITE TÀI LIỆU CHUẨN</div>
                     <div class="card-actions">
-                        <button class="btn-preview" onclick="alert('Tính năng xem thử đang được cập nhật cho tài liệu này!')">
+                        <a href="https://drive.google.com/drive/folders/1QGNqe5D5N6kyZY468Trm6hjw7ehXXLFo?usp=drive_link" target="_blank" class="btn-preview">
                             <i class="fa-solid fa-eye"></i> Xem Thử
-                        </button>
+                        </a>
                         <button class="btn-buy" onclick="openOrderModal('VL04', 'DẠY THÊM VẬT LÝ KHỐI 11 – WEBSITE TÀI LIỆU CHUẨN', '180.000đ')">
-                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
                         </button>
                     </div>
                 </div>
@@ -720,11 +719,11 @@
                     </div>
                     <div class="card-title">DẠY THÊM VẬT LÝ KHỐI 11 – WEBSITE THỦ KHOA ĐẠI HỌC</div>
                     <div class="card-actions">
-                        <button class="btn-preview" onclick="alert('Tính năng xem thử đang được cập nhật cho tài liệu này!')">
+                        <a href="https://drive.google.com/drive/folders/1yDjI-IePYX-wsqlj5QpLqQVoO79EB_AI?usp=drive_link" target="_blank" class="btn-preview">
                             <i class="fa-solid fa-eye"></i> Xem Thử
-                        </button>
+                        </a>
                         <button class="btn-buy" onclick="openOrderModal('VL05', 'DẠY THÊM VẬT LÝ KHỐI 11 – WEBSITE THỦ KHOA ĐẠI HỌC', '180.000đ')">
-                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
                         </button>
                     </div>
                 </div>
@@ -736,11 +735,11 @@
                     </div>
                     <div class="card-title">DẠY THÊM VẬT LÝ KHỐI 11 – WEBSITE TÀI LIỆU CHUẨN 2027</div>
                     <div class="card-actions">
-                        <button class="btn-preview" onclick="alert('Tính năng xem thử đang được cập nhật cho tài liệu này!')">
+                        <a href="https://drive.google.com/drive/folders/1nraFs7p5XajlkCHYnV3gq2G-WUMXwq98?usp=drive_link" target="_blank" class="btn-preview">
                             <i class="fa-solid fa-eye"></i> Xem Thử
-                        </button>
+                        </a>
                         <button class="btn-buy" onclick="openOrderModal('VL2706', 'DẠY THÊM VẬT LÝ KHỐI 11 – WEBSITE TÀI LIỆU CHUẨN 2027', '220.000đ')">
-                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
                         </button>
                     </div>
                 </div>
@@ -763,11 +762,11 @@
                     </div>
                     <div class="card-title">DẠY THÊM VẬT LÝ KHỐI 12 – THẦY TRẦN THI NHÂN</div>
                     <div class="card-actions">
-                        <button class="btn-preview" onclick="alert('Tính năng xem thử đang được cập nhật cho tài liệu này!')">
+                        <a href="https://drive.google.com/drive/folders/1IGOuDDz47JRmqngqFaufXJgqKFfMAw7v?usp=drive_link" target="_blank" class="btn-preview">
                             <i class="fa-solid fa-eye"></i> Xem Thử
-                        </button>
+                        </a>
                         <button class="btn-buy" onclick="openOrderModal('VL01', 'DẠY THÊM VẬT LÝ KHỐI 12 – THẦY TRẦN THI NHÂN', '180.000đ')">
-                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
                         </button>
                     </div>
                 </div>
@@ -779,11 +778,11 @@
                     </div>
                     <div class="card-title">DẠY THÊM VẬT LÝ KHỐI 12 – CÔ NHUNG CUTE</div>
                     <div class="card-actions">
-                        <button class="btn-preview" onclick="alert('Tính năng xem thử đang được cập nhật cho tài liệu này!')">
+                        <a href="https://drive.google.com/drive/folders/1wyoi66R5PNQVZk7o5NbYVRI0CVt3zLcD?usp=drive_link" target="_blank" class="btn-preview">
                             <i class="fa-solid fa-eye"></i> Xem Thử
-                        </button>
+                        </a>
                         <button class="btn-buy" onclick="openOrderModal('VL02', 'DẠY THÊM VẬT LÝ KHỐI 12 – CÔ NHUNG CUTE', '180.000đ')">
-                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
                         </button>
                     </div>
                 </div>
@@ -795,11 +794,11 @@
                     </div>
                     <div class="card-title">DẠY THÊM VẬT LÝ KHỐI 12 – THẦY HOÀNG SƯ ĐIỂU</div>
                     <div class="card-actions">
-                        <button class="btn-preview" onclick="alert('Tính năng xem thử đang được cập nhật cho tài liệu này!')">
+                        <a href="https://drive.google.com/drive/folders/1huMZLQsAyNnvGCIbc2jS01xdAE-Q6Blm?usp=drive_link" target="_blank" class="btn-preview">
                             <i class="fa-solid fa-eye"></i> Xem Thử
-                        </button>
+                        </a>
                         <button class="btn-buy" onclick="openOrderModal('VL03', 'DẠY THÊM VẬT LÝ KHỐI 12 – THẦY HOÀNG SƯ ĐIỂU', '180.000đ')">
-                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
                         </button>
                     </div>
                 </div>
@@ -811,11 +810,11 @@
                     </div>
                     <div class="card-title">DẠY THÊM VẬT LÝ KHỐI 12 – WEBSITE TÀI LIỆU CHUẨN</div>
                     <div class="card-actions">
-                        <button class="btn-preview" onclick="alert('Tính năng xem thử đang được cập nhật cho tài liệu này!')">
+                        <a href="https://drive.google.com/drive/folders/1QbWF7xmkcZ5T9CGrerafaFnCHWV1bhFo?usp=drive_link" target="_blank" class="btn-preview">
                             <i class="fa-solid fa-eye"></i> Xem Thử
-                        </button>
+                        </a>
                         <button class="btn-buy" onclick="openOrderModal('VL04', 'DẠY THÊM VẬT LÝ KHỐI 12 – WEBSITE TÀI LIỆU CHUẨN', '180.000đ')">
-                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
                         </button>
                     </div>
                 </div>
@@ -827,11 +826,11 @@
                     </div>
                     <div class="card-title">DẠY THÊM VẬT LÝ KHỐI 12 – THẦY VŨ ĐÔNG DƯƠNG</div>
                     <div class="card-actions">
-                        <button class="btn-preview" onclick="alert('Tính năng xem thử đang được cập nhật cho tài liệu này!')">
+                        <a href="https://drive.google.com/drive/folders/1mSjv4I2tOzxQV_MUEjhZZidoMLNOYf8w?usp=drive_link" target="_blank" class="btn-preview">
                             <i class="fa-solid fa-eye"></i> Xem Thử
-                        </button>
+                        </a>
                         <button class="btn-buy" onclick="openOrderModal('VL06', 'DẠY THÊM VẬT LÝ KHỐI 12 – THẦY VŨ ĐÔNG DƯƠNG', '180.000đ')">
-                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
                         </button>
                     </div>
                 </div>
@@ -843,11 +842,11 @@
                     </div>
                     <div class="card-title">DẠY THÊM VẬT LÝ KHỐI 12 – THÁI VĂN THÀNH</div>
                     <div class="card-actions">
-                        <button class="btn-preview" onclick="alert('Tính năng xem thử đang được cập nhật cho tài liệu này!')">
+                        <a href="https://drive.google.com/drive/folders/1KGWLmI1yN-BABQCS-tvTBXK8A-h2Shp5?usp=drive_link" target="_blank" class="btn-preview">
                             <i class="fa-solid fa-eye"></i> Xem Thử
-                        </button>
+                        </a>
                         <button class="btn-buy" onclick="openOrderModal('VL09', 'DẠY THÊM VẬT LÝ KHỐI 12 – THÁI VĂN THÀNH', '230.000đ')">
-                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
                         </button>
                     </div>
                 </div>
@@ -859,11 +858,11 @@
                     </div>
                     <div class="card-title">DẠY THÊM & BÀI TẬP THỰC TẾ KHỐI 12 – THẦY CHU VĂN BIÊN</div>
                     <div class="card-actions">
-                        <button class="btn-preview" onclick="alert('Tính năng xem thử đang được cập nhật cho tài liệu này!')">
+                        <a href="https://drive.google.com/drive/folders/1-4ZOBanxGz8If5tbtf8jB7M2-ztdrDCC?usp=drive_link" target="_blank" class="btn-preview">
                             <i class="fa-solid fa-eye"></i> Xem Thử
-                        </button>
+                        </a>
                         <button class="btn-buy" onclick="openOrderModal('VL14', 'DẠY THÊM & BÀI TẬP THỰC TẾ KHỐI 12 – THẦY CHU VĂN BIÊN', '250.000đ')">
-                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
                         </button>
                     </div>
                 </div>
@@ -875,11 +874,11 @@
                     </div>
                     <div class="card-title">DẠY THÊM VẬT LÝ KHỐI 12 – THẦY TRẦN THI NHÂN 2027</div>
                     <div class="card-actions">
-                        <button class="btn-preview" onclick="alert('Tính năng xem thử đang được cập nhật cho tài liệu này!')">
+                        <a href="https://drive.google.com/drive/folders/1hZ8CdpZ9MLRbEcmT1dGyksW0YYI3DPcW?usp=drive_link" target="_blank" class="btn-preview">
                             <i class="fa-solid fa-eye"></i> Xem Thử
-                        </button>
+                        </a>
                         <button class="btn-buy" onclick="openOrderModal('VL2702', 'DẠY THÊM VẬT LÝ KHỐI 12 – THẦY TRẦN THI NHÂN 2027', '250.000đ')">
-                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
                         </button>
                     </div>
                 </div>
@@ -891,11 +890,11 @@
                     </div>
                     <div class="card-title">NẮM TRỌN KIẾN THỨC VẬT LÝ 12 – THẦY ĐỖ NGỌC HÀ</div>
                     <div class="card-actions">
-                        <button class="btn-preview" onclick="alert('Tính năng xem thử đang được cập nhật cho tài liệu này!')">
+                        <a href="https://drive.google.com/drive/folders/1h1nKNDhlSSTEfBbXoPTAA8ZS9WaAN63x?usp=drive_link" target="_blank" class="btn-preview">
                             <i class="fa-solid fa-eye"></i> Xem Thử
-                        </button>
+                        </a>
                         <button class="btn-buy" onclick="openOrderModal('VL2703', 'NẮM TRỌN KIẾN THỨC VẬT LÝ 12 – THẦY ĐỖ NGỌC HÀ', '400.000đ')">
-                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
                         </button>
                     </div>
                 </div>
@@ -907,11 +906,11 @@
                     </div>
                     <div class="card-title">DẠY THÊM VẬT LÝ KHỐI 12 – WEBSITE TÀI LIỆU CHUẨN 2027</div>
                     <div class="card-actions">
-                        <button class="btn-preview" onclick="alert('Tính năng xem thử đang được cập nhật cho tài liệu này!')">
+                        <a href="https://drive.google.com/drive/folders/1gFFX4C-OsQKRt0oBb0nhHFiTbot5S8cU?usp=drive_link" target="_blank" class="btn-preview">
                             <i class="fa-solid fa-eye"></i> Xem Thử
-                        </button>
+                        </a>
                         <button class="btn-buy" onclick="openOrderModal('VL2706', 'DẠY THÊM VẬT LÝ KHỐI 12 – WEBSITE TÀI LIỆU CHUẨN 2027', '220.000đ')">
-                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
                         </button>
                     </div>
                 </div>
@@ -934,11 +933,11 @@
                     </div>
                     <div class="card-title">TÓM TẮT LÝ THUYẾT VẬT LÝ 3 KHỐI – TURING PHYSICS</div>
                     <div class="card-actions">
-                        <button class="btn-preview" onclick="alert('Tính năng xem thử đang được cập nhật cho tài liệu này!')">
+                        <a href="https://drive.google.com/drive/folders/1KCB8mpSN_JAKTcEkJOvwOLS4W0BKlujp?usp=drive_link" target="_blank" class="btn-preview">
                             <i class="fa-solid fa-eye"></i> Xem Thử
-                        </button>
+                        </a>
                         <button class="btn-buy" onclick="openOrderModal('VL2705', 'TÓM TẮT LÝ THUYẾT VẬT LÝ 3 KHỐI – TURING PHYSICS', '130.000đ')">
-                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
                         </button>
                     </div>
                 </div>
@@ -950,11 +949,11 @@
                     </div>
                     <div class="card-title">699 CÂU CHINH PHỤC TOÀN DIỆN LÝ THUYẾT – THẦY VŨ NGỌC ANH</div>
                     <div class="card-actions">
-                        <button class="btn-preview" onclick="alert('Tính năng xem thử đang được cập nhật cho tài liệu này!')">
+                        <a href="https://drive.google.com/drive/folders/1SV6RDeI-r2fA3veSihm9hdtserWsor67?usp=drive_link" target="_blank" class="btn-preview">
                             <i class="fa-solid fa-eye"></i> Xem Thử
-                        </button>
+                        </a>
                         <button class="btn-buy" onclick="openOrderModal('VL07', '699 CÂU CHINH PHỤC TOÀN DIỆN LÝ THUYẾT – THẦY VŨ NGỌC ANH', '120.000đ')">
-                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
                         </button>
                     </div>
                 </div>
@@ -966,11 +965,11 @@
                     </div>
                     <div class="card-title">1000 CÂU CÀN QUÉT LÝ THUYẾT – THẦY VŨ NGỌC ANH</div>
                     <div class="card-actions">
-                        <button class="btn-preview" onclick="alert('Tính năng xem thử đang được cập nhật cho tài liệu này!')">
+                        <a href="https://drive.google.com/drive/folders/1xTWu_wbkz7L-PZZ-SsNz2Kr4bqmJFtqD?usp=drive_link" target="_blank" class="btn-preview">
                             <i class="fa-solid fa-eye"></i> Xem Thử
-                        </button>
+                        </a>
                         <button class="btn-buy" onclick="openOrderModal('VL07', '1000 CÂU CÀN QUÉT LÝ THUYẾT – THẦY VŨ NGỌC ANH', '120.000đ')">
-                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
                         </button>
                     </div>
                 </div>
@@ -982,11 +981,11 @@
                     </div>
                     <div class="card-title">BỘ ĐỀ LUYỆN 10 ĐIỂM LÝ THUYẾT VẬT LÝ</div>
                     <div class="card-actions">
-                        <button class="btn-preview" onclick="alert('Tính năng xem thử đang được cập nhật cho tài liệu này!')">
+                        <a href="https://drive.google.com/drive/folders/1ydCAoORrDswI7y9bdf-udQR90x0ZHQ9D?usp=drive_link" target="_blank" class="btn-preview">
                             <i class="fa-solid fa-eye"></i> Xem Thử
-                        </button>
+                        </a>
                         <button class="btn-buy" onclick="openOrderModal('VL19', 'BỘ ĐỀ LUYỆN 10 ĐIỂM LÝ THUYẾT VẬT LÝ', '200.000đ')">
-                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
                         </button>
                     </div>
                 </div>
@@ -998,11 +997,11 @@
                     </div>
                     <div class="card-title">600+ CÂU TRẮC NGHIỆM ĐÚNG SAI LÝ THUYẾT – WEBSITE TÀI LIỆU CHUẨN</div>
                     <div class="card-actions">
-                        <button class="btn-preview" onclick="alert('Tính năng xem thử đang được cập nhật cho tài liệu này!')">
+                        <a href="https://drive.google.com/drive/folders/1ScueMhKC0LvL48B4DUAT3y72J9S-npFR?usp=drive_link" target="_blank" class="btn-preview">
                             <i class="fa-solid fa-eye"></i> Xem Thử
-                        </button>
+                        </a>
                         <button class="btn-buy" onclick="openOrderModal('VL25', '600+ CÂU TRẮC NGHIỆM ĐÚNG SAI LÝ THUYẾT – WEBSITE TÀI LIỆU CHUẨN', '200.000đ')">
-                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
                         </button>
                     </div>
                 </div>
@@ -1014,11 +1013,11 @@
                     </div>
                     <div class="card-title">20 ĐỀ LUYỆN LÝ THUYẾT TNTHPTQG2026</div>
                     <div class="card-actions">
-                        <button class="btn-preview" onclick="alert('Tính năng xem thử đang được cập nhật cho tài liệu này!')">
+                        <a href="https://drive.google.com/drive/folders/17SgLwiqR_JtjLpiN98WvJwgvDuMRM1gf?usp=drive_link" target="_blank" class="btn-preview">
                             <i class="fa-solid fa-eye"></i> Xem Thử
-                        </button>
+                        </a>
                         <button class="btn-buy" onclick="openOrderModal('VL26', '20 ĐỀ LUYỆN LÝ THUYẾT TNTHPTQG2026', '130.000đ')">
-                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
                         </button>
                     </div>
                 </div>
@@ -1030,11 +1029,11 @@
                     </div>
                     <div class="card-title">1000 CÂU TRẮC NGHIỆM LÝ THUYẾT</div>
                     <div class="card-actions">
-                        <button class="btn-preview" onclick="alert('Tính năng xem thử đang được cập nhật cho tài liệu này!')">
+                        <a href="https://drive.google.com/drive/folders/1XsLWHoduZ3n4lIPKlInnu1-5TkioItoT?usp=drive_link" target="_blank" class="btn-preview">
                             <i class="fa-solid fa-eye"></i> Xem Thử
-                        </button>
+                        </a>
                         <button class="btn-buy" onclick="openOrderModal('VL27', '1000 CÂU TRẮC NGHIỆM LÝ THUYẾT', '130.000đ')">
-                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
                         </button>
                     </div>
                 </div>
@@ -1057,11 +1056,11 @@
                     </div>
                     <div class="card-title">100 MÔ HÌNH THỰC TẾ NÂNG CAO – THẦY VŨ NGỌC ANH</div>
                     <div class="card-actions">
-                        <button class="btn-preview" onclick="alert('Tính năng xem thử đang được cập nhật cho tài liệu này!')">
+                        <a href="https://drive.google.com/drive/folders/1aQCcJsVw0szFpbXFDKb3W85U1dh5YDGU?usp=drive_link" target="_blank" class="btn-preview">
                             <i class="fa-solid fa-eye"></i> Xem Thử
-                        </button>
+                        </a>
                         <button class="btn-buy" onclick="openOrderModal('VL07', '100 MÔ HÌNH THỰC TẾ NÂNG CAO – THẦY VŨ NGỌC ANH', '130.000đ')">
-                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
                         </button>
                     </div>
                 </div>
@@ -1073,11 +1072,11 @@
                     </div>
                     <div class="card-title">200 CÂU HỎI THỰC TẾ & THÍ NGHIỆM – THẦY VŨ ĐÔNG DƯƠNG</div>
                     <div class="card-actions">
-                        <button class="btn-preview" onclick="alert('Tính năng xem thử đang được cập nhật cho tài liệu này!')">
+                        <a href="https://drive.google.com/drive/folders/1FdWfRL-C2KERTzcV8SeX41123A-mfQkK?usp=drive_link" target="_blank" class="btn-preview">
                             <i class="fa-solid fa-eye"></i> Xem Thử
-                        </button>
+                        </a>
                         <button class="btn-buy" onclick="openOrderModal('VL08', '200 CÂU HỎI THỰC TẾ & THÍ NGHIỆM – THẦY VŨ ĐÔNG DƯƠNG', '70.000đ')">
-                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
                         </button>
                     </div>
                 </div>
@@ -1089,11 +1088,11 @@
                     </div>
                     <div class="card-title">BÀI TẬP THỰC TẾ THEO CHƯƠNG – THẦY CHU VĂN BIÊN</div>
                     <div class="card-actions">
-                        <button class="btn-preview" onclick="alert('Tính năng xem thử đang được cập nhật cho tài liệu này!')">
+                        <a href="https://drive.google.com/drive/folders/1q0m6-gPkGxOMufQm1FThsFMMHwSlI9UI?usp=drive_link" target="_blank" class="btn-preview">
                             <i class="fa-solid fa-eye"></i> Xem Thử
-                        </button>
+                        </a>
                         <button class="btn-buy" onclick="openOrderModal('VL14', 'BÀI TẬP THỰC TẾ THEO CHƯƠNG – THẦY CHU VĂN BIÊN', '150.000đ')">
-                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
                         </button>
                     </div>
                 </div>
@@ -1105,11 +1104,11 @@
                     </div>
                     <div class="card-title">BỘ CÂU HỎI MÔ HÌNH THỰC TẾ NÂNG CAO – WEBSITE THỦ KHOA ĐẠI HỌC</div>
                     <div class="card-actions">
-                        <button class="btn-preview" onclick="alert('Tính năng xem thử đang được cập nhật cho tài liệu này!')">
+                        <a href="https://drive.google.com/drive/folders/19MKoM3HpajmPS3JtHZwyXTkEFTy7arrt?usp=drive_link" target="_blank" class="btn-preview">
                             <i class="fa-solid fa-eye"></i> Xem Thử
-                        </button>
+                        </a>
                         <button class="btn-buy" onclick="openOrderModal('VL19', 'BỘ CÂU HỎI MÔ HÌNH THỰC TẾ NÂNG CAO – WEBSITE THỦ KHOA ĐẠI HỌC', '200.000đ')">
-                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
                         </button>
                     </div>
                 </div>
@@ -1132,11 +1131,11 @@
                     </div>
                     <div class="card-title">30 NGÀY TỔNG ÔN CẤP TỐC VẬT LÝ – THẦY VŨ NGỌC ANH</div>
                     <div class="card-actions">
-                        <button class="btn-preview" onclick="alert('Tính năng xem thử đang được cập nhật cho tài liệu này!')">
+                        <a href="https://drive.google.com/drive/folders/1Q-amRjhZ9UCToLGa5_s8tVikLNJFDiuJ?usp=drive_link" target="_blank" class="btn-preview">
                             <i class="fa-solid fa-eye"></i> Xem Thử
-                        </button>
+                        </a>
                         <button class="btn-buy" onclick="openOrderModal('VL07', '30 NGÀY TỔNG ÔN CẤP TỐC VẬT LÝ – THẦY VŨ NGỌC ANH', '110.000đ')">
-                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
                         </button>
                     </div>
                 </div>
@@ -1148,11 +1147,11 @@
                     </div>
                     <div class="card-title">BỘ ĐỀ TRƯỜNG SỞ 2026 – WEBSITE TÀI LIỆU CHUẨN</div>
                     <div class="card-actions">
-                        <button class="btn-preview" onclick="alert('Tính năng xem thử đang được cập nhật cho tài liệu này!')">
+                        <a href="https://drive.google.com/drive/folders/1TjWcns_H1X7aDouUlGcnJdKjVLWBlOru?usp=drive_link" target="_blank" class="btn-preview">
                             <i class="fa-solid fa-eye"></i> Xem Thử
-                        </button>
+                        </a>
                         <button class="btn-buy" onclick="openOrderModal('VL16', 'BỘ ĐỀ TRƯỜNG SỞ 2026 – WEBSITE TÀI LIỆU CHUẨN', '250.000đ')">
-                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
                         </button>
                     </div>
                 </div>
@@ -1164,11 +1163,11 @@
                     </div>
                     <div class="card-title">BỘ 40 ĐỀ LUYỆN THI NÂNG CAO MỨC ĐỘ 9 ĐIỂM – WEBSITE TÀI LIỆU CHUẨN</div>
                     <div class="card-actions">
-                        <button class="btn-preview" onclick="alert('Tính năng xem thử đang được cập nhật cho tài liệu này!')">
+                        <a href="https://drive.google.com/drive/folders/1t9EEDoLndg8ECjHl1tbszpvcwpgvSGP3?usp=drive_link" target="_blank" class="btn-preview">
                             <i class="fa-solid fa-eye"></i> Xem Thử
-                        </button>
+                        </a>
                         <button class="btn-buy" onclick="openOrderModal('VL17', 'BỘ 40 ĐỀ LUYỆN THI NÂNG CAO MỨC ĐỘ 9 ĐIỂM – WEBSITE TÀI LIỆU CHUẨN', '250.000đ')">
-                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
                         </button>
                     </div>
                 </div>
@@ -1180,11 +1179,11 @@
                     </div>
                     <div class="card-title">BỘ 60+ ĐỀ KHẢO SÁT CHẤT LƯỢNG VẬT LÝ 12 – WEBSITE THỦ KHOA ĐẠI HỌC</div>
                     <div class="card-actions">
-                        <button class="btn-preview" onclick="alert('Tính năng xem thử đang được cập nhật cho tài liệu này!')">
+                        <a href="https://drive.google.com/drive/folders/1v-6NSxBQwikQCYSZ9gz_0wa6SzYV_9hI?usp=drive_link" target="_blank" class="btn-preview">
                             <i class="fa-solid fa-eye"></i> Xem Thử
-                        </button>
+                        </a>
                         <button class="btn-buy" onclick="openOrderModal('VL19', 'BỘ 60+ ĐỀ KHẢO SÁT CHẤT LƯỢNG VẬT LÝ 12 – WEBSITE THỦ KHOA ĐẠI HỌC', '250.000đ')">
-                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
                         </button>
                     </div>
                 </div>
@@ -1196,11 +1195,11 @@
                     </div>
                     <div class="card-title">250 ĐỀ TRƯỜNG SỞ 2026 – WEBSITE THỦ KHOA ĐẠI HỌC</div>
                     <div class="card-actions">
-                        <button class="btn-preview" onclick="alert('Tính năng xem thử đang được cập nhật cho tài liệu này!')">
+                        <a href="https://drive.google.com/drive/folders/15ba_HiqcF8vQ4446SijnNeEzU6QI38Cu?usp=drive_link" target="_blank" class="btn-preview">
                             <i class="fa-solid fa-eye"></i> Xem Thử
-                        </button>
+                        </a>
                         <button class="btn-buy" onclick="openOrderModal('VL20', '250 ĐỀ TRƯỜNG SỞ 2026 – WEBSITE THỦ KHOA ĐẠI HỌC', '250.000đ')">
-                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
                         </button>
                     </div>
                 </div>
@@ -1212,11 +1211,11 @@
                     </div>
                     <div class="card-title">25 ĐỀ THI THỬ CHUẨN FORM THPTQG2026 – THẦY HOÀNG SƯ ĐIỂU</div>
                     <div class="card-actions">
-                        <button class="btn-preview" onclick="alert('Tính năng xem thử đang được cập nhật cho tài liệu này!')">
+                        <a href="https://drive.google.com/drive/folders/13igCvc77L_1s2EeZuhr6x4zSfntrFI4u?usp=drive_link" target="_blank" class="btn-preview">
                             <i class="fa-solid fa-eye"></i> Xem Thử
-                        </button>
+                        </a>
                         <button class="btn-buy" onclick="openOrderModal('VL21', '25 ĐỀ THI THỬ CHUẨN FORM THPTQG2026 – THẦY HOÀNG SƯ ĐIỂU', '190.000đ')">
-                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
                         </button>
                     </div>
                 </div>
@@ -1228,11 +1227,11 @@
                     </div>
                     <div class="card-title">BỘ 54 ĐỀ TỔNG ÔN THỰC CHIẾN CHUẨN CẤU TRÚC – THÁI VĂN THÀNH</div>
                     <div class="card-actions">
-                        <button class="btn-preview" onclick="alert('Tính năng xem thử đang được cập nhật cho tài liệu này!')">
+                        <a href="https://drive.google.com/drive/folders/1mjFtcRmp8sEfAfCFYZ10JplM1KuXy5qj?usp=drive_link" target="_blank" class="btn-preview">
                             <i class="fa-solid fa-eye"></i> Xem Thử
-                        </button>
+                        </a>
                         <button class="btn-buy" onclick="openOrderModal('VL22', 'BỘ 54 ĐỀ TỔNG ÔN THỰC CHIẾN CHUẨN CẤU TRÚC – THÁI VĂN THÀNH', '200.000đ')">
-                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
                         </button>
                     </div>
                 </div>
@@ -1244,11 +1243,11 @@
                     </div>
                     <div class="card-title">ĐỀ THI THỬ CHUẨN CẤU TRÚC 2026 – THÁI VĂN THÀNH</div>
                     <div class="card-actions">
-                        <button class="btn-preview" onclick="alert('Tính năng xem thử đang được cập nhật cho tài liệu này!')">
+                        <a href="https://drive.google.com/drive/folders/1bOw2CwjKef61i6QK64Vvu877aXc4Plmy?usp=drive_link" target="_blank" class="btn-preview">
                             <i class="fa-solid fa-eye"></i> Xem Thử
-                        </button>
+                        </a>
                         <button class="btn-buy" onclick="openOrderModal('VL23', 'ĐỀ THI THỬ CHUẨN CẤU TRÚC 2026 – THÁI VĂN THÀNH', '250.000đ')">
-                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
                         </button>
                     </div>
                 </div>
@@ -1260,11 +1259,11 @@
                     </div>
                     <div class="card-title">10 ĐỀ CƠ BẢN VỀ ĐÍCH</div>
                     <div class="card-actions">
-                        <button class="btn-preview" onclick="alert('Tính năng xem thử đang được cập nhật cho tài liệu này!')">
+                        <a href="https://drive.google.com/drive/folders/1S1rpZvXIhB0pUI-coX_OEzs_WEJDLp9P?usp=drive_link" target="_blank" class="btn-preview">
                             <i class="fa-solid fa-eye"></i> Xem Thử
-                        </button>
+                        </a>
                         <button class="btn-buy" onclick="openOrderModal('VL24', '10 ĐỀ CƠ BẢN VỀ ĐÍCH', '112.000đ')">
-                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua
+                            <i class="fa-solid fa-cart-shopping"></i> Đặt Mua Ngay
                         </button>
                     </div>
                 </div>
@@ -1287,9 +1286,6 @@
                     </div>
                     <div class="card-title">POWER POINT & GIÁO ÁN VẬT LÝ</div>
                     <div class="card-actions">
-                        <button class="btn-preview" style="background: #e2e8f0; color: #94a3b8; cursor: not-allowed; border-color: #e2e8f0;" disabled>
-                            <i class="fa-solid fa-eye"></i> Xem Thử
-                        </button>
                         <button class="btn-buy" style="background: #94a3b8; cursor: not-allowed;" disabled>
                             <i class="fa-solid fa-clock"></i> Đang Cập Nhật
                         </button>
@@ -1348,83 +1344,49 @@
                 btnElement.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
             }
 
-            // Xóa trắng thanh tìm kiếm khi chuyển tab để tránh nhầm lẫn logic
-            document.getElementById('searchInput').value = '';
-
             // Show/Hide Sections
             const sections = document.querySelectorAll('.category-content');
             sections.forEach(sec => {
                 if (sec.getAttribute('data-cat') === catId) {
                     sec.style.display = 'block';
                     sec.classList.add('active');
-                    // Hiển thị lại toàn bộ card trong tab này (vì có thể bị ẩn do search trước đó)
-                    sec.querySelectorAll('.card').forEach(c => c.style.display = 'flex');
                 } else {
                     sec.style.display = 'none';
                     sec.classList.remove('active');
                 }
             });
 
-            document.getElementById('noResults').style.display = 'none';
-
             // Scroll active section to center/top smoothly
             const mainContainer = document.getElementById('mainContainer');
             mainContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+            // Re-apply search filter if user typed something
+            filterMaterials();
         }
 
-        // TÌM KIẾM TOÀN CỤC (GLOBAL SEARCH)
+        // SEARCH FILTER FUNCTION
         function filterMaterials() {
             const query = document.getElementById('searchInput').value.toLowerCase().trim();
-            const sections = document.querySelectorAll('.category-content');
-            let totalVisibleCount = 0;
+            const cards = document.querySelectorAll('.card');
+            let visibleCount = 0;
 
-            if (query.length > 0) {
-                // Đang nhập tìm kiếm -> Hiển thị toàn bộ các tab và lọc
-                sections.forEach(sec => {
-                    sec.style.display = 'block'; // Tạm thời bật hết các khối lên
-                    let sectionHasVisibleCards = false;
-                    const cards = sec.querySelectorAll('.card');
+            cards.forEach(card => {
+                const title = card.getAttribute('data-title') || '';
+                const code = card.getAttribute('data-code') || '';
+                const parentSection = card.closest('.category-content');
 
-                    cards.forEach(card => {
-                        const title = card.getAttribute('data-title') || '';
-                        const code = card.getAttribute('data-code') || '';
-                        
-                        if (title.includes(query) || code.includes(query)) {
-                            card.style.display = 'flex';
-                            sectionHasVisibleCards = true;
-                            totalVisibleCount++;
-                        } else {
-                            card.style.display = 'none';
-                        }
-                    });
+                const isSectionVisible = window.getComputedStyle(parentSection).display !== 'none';
 
-                    // Nếu trong Tab này không có card nào khớp kết quả -> Ẩn Tab này đi cho gọn
-                    if (!sectionHasVisibleCards) {
-                        sec.style.display = 'none';
-                    }
-                });
-            } else {
-                // Xóa trống thanh tìm kiếm -> Trả về giao diện của Tab hiện tại đang Active
-                const activeBtn = document.querySelector('.tab-btn.active');
-                if(activeBtn) {
-                    const onclickAttr = activeBtn.getAttribute('onclick');
-                    const activeCat = onclickAttr.match(/'([^']+)'/)[1]; // Lấy ra id của tab đang active
-                    
-                    sections.forEach(sec => {
-                        if (sec.getAttribute('data-cat') === activeCat) {
-                            sec.style.display = 'block';
-                            sec.querySelectorAll('.card').forEach(c => c.style.display = 'flex');
-                        } else {
-                            sec.style.display = 'none';
-                        }
-                    });
+                if (isSectionVisible && (title.includes(query) || code.includes(query))) {
+                    card.style.display = 'flex';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
                 }
-                totalVisibleCount = 1; // Khỏi hiện dòng "Không tìm thấy"
-            }
+            });
 
-            // Xử lý thông báo Không tìm thấy
             const noResults = document.getElementById('noResults');
-            if (totalVisibleCount === 0) {
+            if (visibleCount === 0) {
                 noResults.style.display = 'block';
             } else {
                 noResults.style.display = 'none';
