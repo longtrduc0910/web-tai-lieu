@@ -484,6 +484,58 @@
             .tabs-container { justify-content: flex-start; }
             .modal-content { margin: 15% auto; padding: 1.5rem; }
         }
+        /* --- NÚT LIÊN HỆ ZALO GÓC PHẢI DƯỚI --- */
+.floating-contact {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #0068ff; /* Màu xanh chuẩn của Zalo */
+    color: white;
+    padding: 12px 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0, 104, 255, 0.4);
+    z-index: 999; /* Đảm bảo nút luôn nổi lên trên cùng */
+    transition: all 0.3s ease;
+    animation: bounce 2s infinite;
+}
+
+.floating-contact:hover {
+    background-color: #0055d4;
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 104, 255, 0.6);
+    color: white;
+}
+
+.floating-contact img {
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+/* Hiệu ứng nhún nhảy */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+    60% { transform: translateY(-5px); }
+}
+
+/* Điều chỉnh lại vị trí trên điện thoại cho đỡ vướng */
+@media (max-width: 768px) {
+    .floating-contact {
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 16px;
+        font-size: 0.9rem;
+    }
+}
     </style>
 </head>
 <body>
@@ -1414,5 +1466,10 @@
             }
         }
     </script>
+    <!-- NÚT LIÊN HỆ ZALO -->
+<a href="https://zalo.me/0843589647" target="_blank" class="floating-contact">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo">
+    <span>Liên hệ mua ngay</span>
+</a>
 </body>
 </html>
